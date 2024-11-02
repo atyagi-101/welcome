@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-toggle">
+            <div class="sidebar-logo">
+                <a href="#"><i class="bi bi-stack"></i> AT Solutions</a>
+            </div>
+            <!-- Sidebar Navigation -->
+            <ul class="sidebar-nav p-0">
+                <li class="sidebar-header">
+                    Navigation
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span><i class="bi bi-sliders2-vertical" style="margin-right: 10px;"></i>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-agenda" style="margin-right: 25px;"></i>
+                        <span><i class="bi bi-house"></i> Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-agenda" style="margin-right: 25px;"></i>
+                        <span><i class="bi bi-substack"></i> Blog</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-agenda" style="margin-right: 25px;"></i>
+                        <span><i class="bi bi-github"></i> Github</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="true" aria-controls="auth">
+                        <i class="lni lni-protection"></i>
+                        <span>Apps</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link"><i class="bi bi-file-earmark-text"></i> File Manager</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link"><i class="bi bi-calendar-week"></i> Calendar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span><i class="bi bi-envelope-at"></i> Email</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-cog"></i>
+                        <span><i class="bi bi-cloud-upload"></i> Changelog</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Sidebar Navigation Ends -->
+            <div class="sidebar-footer" style="margin-bottom: 15px;text-align: center">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>root@abhishek:~$ echo "Hi!"</span>
+                </a>
+            </div>
+        </aside>
+        <!-- Sidebar Ends -->
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand">
+                <button class="toggler-btn" type="button">
+                    <i class="bi bi-text-left"></i>
+                </button>
+            </nav>
+            <main class="p-3">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-xxl-3 d-flex">
+                            <div class="card illustration flex-fill">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row g-0 w-100 mobile">
+                                        <div class="col-6">
+                                            <div class="illustration-text p-3 m-1">
+                                                <h6 class="illustration-text">Welcome, Abhishek Tyagi!</h6>
+                                                <p class="mb-0">AT Dashboard</p>
+                                            </div>
+                                            <div style="display: flex;margin-top: 0;">
+                                                <div class="cog-small" id="cog" style="margin-right: 0;margin-top: 0;">
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                                <div class="cog-small" id="cog" style="margin-right: 0;margin-top: 0;">
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                                <div class="cog-small" id="cog" style="margin-right: 0;margin-top: 0;">
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                                <div class="cog-small" id="cog" style="margin-right: 0;margin-top: 0;">
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                                <div class="cog-small" id="cog" style="margin-right: 0;margin-top: 0;">
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                            <span id="datetime" style="margin-left: 19px;font-size: 13px;"></span>
+                                        </div>
+                                        <div class="col-6 align-self-end text-end">
+                                            <img src="./images/welcome.png" class="welcome-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xxl-3 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-2">Daily Feed</h6>
+                                            <div class="d-flex align-items-start">
+                                                <img src="./images/woman.jpg" width="36" height="36"
+                                                    class="rounded-circle me-2" alt="Ashley Briggs">
+                                                <div class="flex-grow-1">
+                                                    <small class="float-end">5m ago</small>
+                                                    <strong>Gwen Tennyson</strong> started following <strong>Abhishek
+                                                        Tyagi</strong><br>
+                                                    <small class="text-muted"
+                                                        style="color: white !important">Today</small><br>
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-start">
+                                                <img src="./images/woman2.jpg" width="36" height="36"
+                                                    class="rounded-circle me-2" alt="Ashley Briggs">
+                                                <div class="flex-grow-1">
+                                                    <small class="float-end">7m ago</small>
+                                                    <strong>Emma Potter</strong> started following <strong>Abhishek
+                                                        Tyagi</strong><br>
+                                                    <small class="text-muted"
+                                                        style="color: white !important">Today</small><br>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-bell text-info">
+                                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xxl-3 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-2">Education</h6>
+                                            <p class="mb-2">B.Tech - Computer Science and Engineering<br />Batch 2016 -
+                                                2020</p>
+                                            <div class="mb-0">
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block ms-3">
+                                            <div class="stat">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-graduation-cap text-info">
+                                                    <path
+                                                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                                                    <path d="M22 10v6" />
+                                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xxl-3 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-2">Technical Skills</h6>
+                                            <p class="mb-2">Python, AWS, Linux, SQL, Shell Scripting, Docker, Git,
+                                                Gitlab, Oracle, Grafana, Prometheus, Splunk, CI/CD, SVN, IBM Symphony,
+                                                Jira </p>
+                                            <div class="mb-0">
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block ms-3">
+                                            <div class="stat">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-shield-check text-info">
+                                                    <path
+                                                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                                    <path d="m9 12 2 2 4-4" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Latest Certificates</h5>
+                    </div>
+                    <table class="table table-borderless my-0">
+                        <thead>
+                            <tr>
+                                <th>Certificate</th>
+                                <th class="d-none d-xl-table-cell">Certified By</th>
+                                <th>Status</th>
+                                <th class="d-none d-xl-table-cell text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-check">
+                                                <path d="M18 6 7 17l-5-5" />
+                                                <path d="m22 10-7.5 7.5L13 16" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            AWS Certified Cloud Practitioner
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell">
+                                    A Cloud Guru
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column w-100">
+                                        <span class="me-2 mb-1 text-muted"></span>
+                                        <div class="progress progress-sm w-100">
+                                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                                style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell text-end">
+                                    <a href="#" style="color: white;"><i class="bi bi-menu-button"></i> View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-check">
+                                                <path d="M18 6 7 17l-5-5" />
+                                                <path d="m22 10-7.5 7.5L13 16" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            Cloud Computing Foundations
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell">
+                                    A Cloud Guru
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column w-100">
+                                        <span class="me-2 mb-1 text-muted"></span>
+                                        <div class="progress progress-sm w-100">
+                                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                                style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell text-end">
+                                    <a href="#" style="color: white;"><i class="bi bi-menu-button"></i> View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-check">
+                                                <path d="M18 6 7 17l-5-5" />
+                                                <path d="m22 10-7.5 7.5L13 16" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            Grafana, Prometheus, Gitlab
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell">
+                                    Udemy
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column w-100">
+                                        <span class="me-2 mb-1 text-muted"></span>
+                                        <div class="progress progress-sm w-100">
+                                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                                style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="d-none d-xl-table-cell text-end">
+                                    <a href="#" style="color: white;"><i class="bi bi-menu-button"></i> View</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="./scripts/siderbar.js"></script>
+    <script src="./scripts/datetime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
